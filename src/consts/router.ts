@@ -1,4 +1,4 @@
 export const Paths = Object.freeze({
   HOME: "/",
-  VOTING: (id: string) => `voting/${id}`,
+  VOTING: (id?: string) => (id ? `voting/${id}` : "voting"),
 });
